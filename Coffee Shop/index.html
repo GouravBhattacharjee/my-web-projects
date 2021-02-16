@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +7,8 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 		/>
+                <link rel="preconnect" href="https://fonts.gstatic.com">
+                <link href="https://fonts.googleapis.com/css2?family=Ballet&family=Roboto:wght@100&display=swap" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Ballet&display=swap" rel="stylesheet">
 	</head>
@@ -15,14 +16,14 @@
 		<div class="container">
 			<header class="coffee-header">
 				<div class="div-logo">
-					<img src="coffee-logo.webp" />
-					<span class="logo-text">Coffee Shop</span>
+					<img src="beans-logo.png" />
+					<!--<span class="logo-text">Coffee Shop</span>-->
 				</div>
 				<nav class="coffee-nav">
-					<a href="*">Home</a>
-					<a href="*">Product</a>
-					<a href="*">Price</a>
-					<a href="*">About</a>
+					<a href="#">Home</a>
+					<a href="#">Product</a>
+					<a href="#">Price</a>
+					<a href="#">About</a>
 				</nav>
 			</header>
 			<div class="site-content">
@@ -30,9 +31,13 @@
 					<h1 class="quote">
 						Coffee is the best thing to douse the sunrise with.
 					</h1>
+                                    <a class="subquote" href="#scroll1">
+                                        Check out our caffeine below
+                                    </a>
+                                    <div id="scroll1" style="position:relative;top:330px;"></div>
 				</div>
-				<div class="card-list">
-					<h1 id="product">Product</h1>
+				<div class="card-list" >
+					<h1 id="product">Our Brews</h1>
 					<div class="card">
 						<img src="mocha-image.png" />
 						<div>
@@ -43,26 +48,27 @@
 					<div class="card">
 						<img src="cappuccino-image.png" />
 						<div>
-							<h2>Mocha</h2>
+							<h2>Cappuccino</h2>
 							<h3>&#8377; 250</h3>
 						</div>
 					</div>
 					<div class="card">
 						<img src="americano-image.png" />
 						<div>
-							<h2>Mocha</h2>
+							<h2>Americano</h2>
 							<h3>&#8377; 250</h3>
 						</div>
 					</div>
 					<div class="card">
 						<img src="latte-image.png" />
 						<div>
-							<h2>Mocha</h2>
+							<h2>Latte</h2>
 							<h3>&#8377; 250</h3>
 						</div>
 					</div>
 				</div>
-				<div class="order-section">
+                       
+				<div class="order-section" >
 					<h1 id="order">Order</h1>
 					<iframe
 						class="form"
@@ -70,10 +76,12 @@
 						frameborder="0"
 						marginheight="0"
 						marginwidth="0"
-						>Loading…</iframe
-					>
+						>Loading…</iframe>
 				</div>
 			</div>
 		</div>
+            
+
 	</body>
+
 </html>
