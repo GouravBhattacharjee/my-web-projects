@@ -1,5 +1,9 @@
+html{
+      scroll-behavior: smooth;
+}
 body {
 	margin: 0px;
+      
 }
 .coffee-header {
 	position: fixed;
@@ -7,33 +11,48 @@ body {
 	right: 0px;
 	height: 100px;
 	width: 100%;
-	background-color: #0a2d42;
+	background-color: #673c4f;
 	z-index: 100;
 }
 .div-logo {
-	height: 100%;
+        height:100%;
 	text-align: center;
 	margin: 10px;
 	float: left;
 }
-.logo-text {
+.div-logo>img{
+    max-height:50px;
+    max-width:50px;
+    width:auto;
+    height:auto;
+    padding-left:10px;
+    padding-top:10px;
+}
+/*.logo-text {
 	display: block;
 	font-family: "Helvetica Neue";
 	font-weight: bold;
 	color: white;
-}
+}*/
 .coffee-nav {
 	float: right;
+        margin-top: 10px;
 	height: 100%;
 }
 .coffee-nav a {
 	color: white;
 	font-size: 15px;
 	font-weight: 700;
-	font-family: "Helvetica Neue";
-	padding-right: 20px;
-	padding-top: 12%;
+        font-family: 'Roboto', sans-serif;
+        margin-right: 20px;
+	margin-top: 12%;
+        padding:5px;
 	display: inline-block;
+        text-decoration: none;
+}
+.coffee-nav>a:hover{
+    background-color: white;
+    color: #673c4f;
 }
 .site-content {
 	position: absolute;
@@ -42,21 +61,52 @@ body {
 }
 .image-content {
 	background-image: url("background-image.webp");
+        margin-top:-80px;
 	height: 700px;
 	width: 100%;
 	text-align: center;
 }
+
 .quote {
+        position:relative;
+        top:150px;;
+        margin-top: 100px;
 	color: white;
 	font-family: 'Ballet', cursive;
-	position: relative;
-	top: 10%;
+        font-size:100px;
+        opacity: 1;
+        z-index: 10;
+        background-color: rgba(171, 161, 148, 0.8);
+        border-width: 1px;
+        
+        
+}
+.subquote{
+    position: relative;
+    color:white;
+    border:1px solid transparent;
+    text-decoration: none;
+    background-color: rgba(171, 161, 148, 1);
+    font-family: Roboto;
+    font-weight: bold;
+    padding: 20px 30px;
+    top:250px;
+}
+.subquote:hover{
+        background-color: #673c4f;
+
+}
+.subquote:active{
+            background-color: #673c4f;
 }
 .card-list {
 	width: 100%;
 }
 #product {
 	text-align: center;
+        font-family: 'Ballet', cursive;
+        color:rgb(171, 161, 148);
+        font-size:50px; 
 }
 .card {
 	width: 22%;
@@ -64,15 +114,21 @@ body {
 	height: 300px;
 	float: left;
 	text-align: center;
+        font-family: Roboto;
 }
 .card img {
 	width: 100%;
 }
 .order-section {
+        position:relative;
 	width: 100%;
 }
+
 #order {
 	text-align: center;
+        font-family: 'Ballet', cursive;
+        color:rgb(171, 161, 148);
+        font-size:50px; 
 }
 .form {
 	width: 100%;
