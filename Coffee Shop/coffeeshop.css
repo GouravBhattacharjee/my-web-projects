@@ -48,7 +48,7 @@ body {
 }
 .quote {
 	color: white;
-	font-family: "Helvetica Neue";
+	font-family: 'Ballet', cursive;
 	position: relative;
 	top: 10%;
 }
